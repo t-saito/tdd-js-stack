@@ -7,6 +7,10 @@ describe('capacity', () => {
   });
 
   // スタックの容量を初期化時に指定できること (例：capacity を 2 に指定した場合
+  test('スタックの容量を初期化時に指定できること', () => {
+    const stack = new Stack(2);
+    expect(stack.capacity()).toBe(2);
+  });
 });
 
 describe('size', () => {

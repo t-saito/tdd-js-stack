@@ -1,6 +1,10 @@
 class Stack {
   constructor(capacity){
-    this.values = new Array(10);
+    if(!capacity){
+      this.values = new Array(10);
+    } else {
+      this.values = new Array(capacity);
+    }
   }
 
   capacity(){
